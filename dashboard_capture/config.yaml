@@ -1,13 +1,15 @@
-name: "Dashboard Capture"
-version: "2.0.4"
-slug: "dashboard_capture"
-description: "Captures a screenshot of the HA dashboard and saves it to /config/www"
+name: Dashboard Capture
+version: "2.0.5"
+slug: dashboard_capture
+description: Capture Home Assistant Lovelace dashboard screenshots
 arch:
   - amd64
+  - armv7
+  - armhf
   - aarch64
-init: false
-map:
-  - config:rw
+startup: "application"
+boot: "auto"
+host_network: true
 options:
   url: "http://homeassistant.local:8123/lovelace/0"
   token: ""
