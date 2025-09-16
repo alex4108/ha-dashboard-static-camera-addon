@@ -1,5 +1,5 @@
 name: "Dashboard Capture"
-version: "2.0.1"
+version: "2.0.2"
 slug: "dashboard_capture"
 description: "Captures a screenshot of the HA dashboard and saves it to /config/www"
 arch:
