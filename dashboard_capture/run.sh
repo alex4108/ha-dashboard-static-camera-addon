@@ -5,6 +5,8 @@ TIME_SLEEP=${INTERVAL:-10}
 TIME_BUDGET=${BUDGET:-10000}
 OUT="/config/www/dashboard.jpg"
 
+printenv
+
 echo "Starting dashboard capture: $URL every $INTERVAL seconds"
 
 while true; do
