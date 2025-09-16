@@ -1,5 +1,5 @@
 name: "Dashboard Capture"
-version: "1.0.1"
+version: "1.0.2"
 slug: "dashboard_capture"
 description: "Captures a screenshot of the HA dashboard and saves it to /config/www"
 arch:
@@ -11,6 +11,8 @@ map:
 options:
   url: "http://homeassistant.local:8123/tv-display/0"
   interval: 10
+  budget: 10000
 schema:
   url: str
   interval: int
+  budget: int
